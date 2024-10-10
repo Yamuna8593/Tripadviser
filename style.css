@@ -189,7 +189,7 @@ body {
 
 .food {
     padding: 30px;
-   
+
 }
 
 .food_container {
@@ -197,7 +197,7 @@ body {
     padding-top: 10px;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+
 }
 
 .food-card {
@@ -211,84 +211,103 @@ body {
     height: 90%;
     width: 100%;
     border-radius: 10px;
-    
+
 }
-.food-card h2{
+
+.food-card h2 {
     position: absolute;
     left: 20%;
     top: 70%;
     color: azure;
-  
+
 }
-.food-card img:hover{
+
+.food-card img:hover {
     opacity: 0.8;
 }
-.popular{
+
+.popular {
     padding: 20px;
 }
-.popular_container{
+
+.popular_container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     justify-content: space-between;
 }
-.popular-card{
+
+.popular-card {
     flex-grow: 1;
     flex-basis: 20%;
     position: relative;
     margin: 8px;
 }
-.popular-card img{
+
+.popular-card img {
     height: 80%;
     width: 100%;
     gap: 10px;
     border-radius: 10px;
 }
-.popular-card img:hover{
+
+.popular-card img:hover {
     opacity: 0.8;
 }
-.creators{
+
+.creators {
     padding: 20px;
 }
-.creators_container{
+
+.creators_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.creators-card{
+
+.creators-card {
     flex-grow: 1;
     flex-basis: 20%;
     position: relative;
     margin: 8px;
 }
-.creators-card img{
+
+.creators-card img {
     height: 80%;
     width: 100%;
     gap: 10px;
     border-radius: 10px;
 }
-.creators-card img:hover{
+
+.creators-card img:hover {
     opacity: 0.8;
 }
-.footer{
+
+.footer {
     background-color: aliceblue;
     margin: 10px;
 }
-.footer_one{
+
+.footer_one {
     display: flex;
     gap: 20px;
 }
-.footer_one h3, p{
+
+.footer_one h3,
+p {
     margin: 10px;
 }
-.footer_one p:hover{
+
+.footer_one p:hover {
     cursor: pointer;
     border-bottom: solid black 2px;
 }
-.footer{
+
+.footer {
     padding: 20px;
 }
-.footer_two__h4{
+
+.footer_two__h4 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -297,18 +316,22 @@ body {
 
 
 }
-.footer_two__s1{
+
+.footer_two__s1 {
     width: 60%;
 }
-.footer_two{
+
+.footer_two {
     display: flex;
 }
-.footer_two_select{
+
+.footer_two_select {
     padding: 50px;
     margin: 50px;
-   
+
 }
-.footer_two_select select{
+
+.footer_two_select select {
     border-radius: 10px;
     padding-top: 10px;
     padding-right: 10px;
@@ -317,15 +340,36 @@ body {
     justify-content: center;
     align-items: center;
 }
-.footer_two__icon{
-  width: 30%;
+
+.footer_two__icon {
+    width: 30%;
     justify-content: space-between;
     padding-left: 80px;
     padding-top: 30px;
     margin-left: 200px;
     margin-top: 20px;
- }
- .footer_two__s1 p{
-    font-size: small;
-     }
+}
 
+.footer_two__s1 p {
+    font-size: small;
+}
+/* Media Queries */
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px){
+    .navbar_s2, .navbar_s3{
+        display: none;
+    }
+
+}
+@media screen and (max-width:600px){
+.food-card, .creators-card, .popular-card{
+    flex-basis: 40%;
+}
+
+}
+
+    
